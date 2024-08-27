@@ -13,21 +13,21 @@ export default function Home() {
           Agendamento Descomplicado
         </Heading>
         <Text size="xl">
-          Conecte seu calendário e permita que as pessoas marquem agendamentos
+          Conecte o seu calendário e permita que as pessoas marquem agendamentos
           no seu tempo livre.
         </Text>
 
         <ClaimUsernameForm />
       </Hero>
 
-      <Preview></Preview>
-      <Image
-        src={previewImage}
-        height={400}
-        alt="Calendário a simbolizar a aplicação em funcionamento"
-        quality={100}
-        priority
-      />
+      <Preview>
+        <Image
+          src={previewImage}
+          height={400}
+          alt="Calendário a simbolizar a aplicação em funcionamento"
+          quality={100}
+        />
+      </Preview>
     </Container>
   )
 }
